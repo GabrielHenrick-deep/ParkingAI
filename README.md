@@ -26,13 +26,12 @@ Este projeto é um aplicativo de reservas de vagas de estacionamento que utiliza
 - **Banco de Dados**: [PostgreSQL](https://www.postgresql.org/)  
 - **Inteligência Artificial**: Modelos de Machine Learning para análise de dados e predição de vagas  
 
-## 🖼 Imagens do Projeto
-
-![Tela Inicial](./www/img/app/login.png)  
-![Cadastro](./www/img/app/cadastro.png)  
-![Home](./www/img/app/home.png)  
-![Perfil do Usuário](./www/img/app/user.png)  
-![Cadastro de Veículos](./www/img/app/cadastroveiculos.png)  
-![Detalhes](./www/img/app/detalhes.png)  
-![Popup](./www/img/app/popup.png)  
-![Carrinho](./www/img/app/carrinho.png)
+## Imagems
+![Tela Inicial](./www/img/app/login.png)
+![Tela Inicial](./www/img/app/cadastro.png)
+![Tela Inicial](./www/img/app/home.png)
+![Tela Inicial](./www/img/app/user.png)
+![Tela Inicial](./www/img/app/cadastroveiculos.png)
+![Tela Inicial](./www/img/app/detalhes.png)
+![Tela Inicial](./www/img/app/popup.png)
+![Tela Inicial](./www/img/app/carrinho.png)
