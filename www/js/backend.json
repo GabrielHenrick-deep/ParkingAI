@@ -1,0 +1,6 @@
+[
+    { "id": 1, "status": "occupied", "type": "idoso", "price": 4.90 },
+    { "id": 2, "status": "available", "type": "pcd", "price": 5.70 },
+    { "id": 3, "status": "occupied", "type": "regular", "price": 3.50 }
+  ]
+  

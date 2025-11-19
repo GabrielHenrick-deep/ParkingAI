@@ -1,0 +1,119 @@
+:root {
+    --branco: #ffffff;
+    --cinza-claro: #f6f6f6;
+    --cinza-medio: #bebdbd;
+    --cinza-escuro: #333333;
+    --preto: #000000;
+    --azul-uber: #276ef1;
+    --gelo: #e0e0e0;
+}
+
+/* Centralização e estilo minimalista */
+.page-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--branco);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilo para o container de informações do usuário */
+.user-info-container {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--gelo);
+}
+
+.profile-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid var(--cinza-medio);
+}
+
+.user-details {
+    margin-left: 15px;
+    text-align: left;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 0;
+}
+
+.user-email {
+    font-size: 14px;
+    color: var(--cinza-escuro);
+}
+
+/* Estilo das ações do perfil */
+.profile-actions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.action-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: var(--branco);
+    border: 1px solid var(--gelo);
+    color: var(--cinza-escuro);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+.action-button:hover {
+    background-color: var(--gelo);
+    border-color: var(--cinza-medio);
+    color: var(--preto);
+}
+
+.logout {
+    color: var(--azul-uber);
+}
+
+.logout:hover {
+    background-color: var(--azul-uber);
+    color: var(--branco);
+}
+
+/* Estilo para Reservas Recentes */
+.recent-bookings {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.recent-bookings h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.booking-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--gelo);
+}
+
+.location-name {
+    font-weight: bold;
+    color: var(--preto);
+}
+
+.booking-date {
+    color: var(--cinza-medio);
+}

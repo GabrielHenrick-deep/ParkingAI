@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#2196f3">
+    <title>Perfil do Usuário</title>
+
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Ícones Material Design -->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <!-- Ícones remixIcons -->
+    <link rel="stylesheet" href="css/remixicons/remixicon.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="view view-main">
+            <div data-name="user" class="page profile-page color-theme-blue">
+                <div class="page-content page-user">
+                    <div id="menuPrincipal" class="toolbar toolbar-bottom">
+                        <div class="toolbar-inner display-flex">
+                            <a href="/index/" class="tab-link link active">
+                                <i class="ri-home-5-line"></i>
+                                <span>Home</span>
+                            </a>        
+                        </div>
+                    </div>
+                    <!-- User Info -->
+                    <div class="user-info-container display-flex align-items-center">
+                        <img src="img/user.jpg" alt="User Avatar" class="profile-avatar">
+                        <div class="user-details">
+                            <h2>Gabriel Henrick</h2>
+                            <p class="user-email">gabriel.henrick@ufu.br</p>
+                        </div>
+                    </div>
+
+                    <!-- User Actions -->
+                    <div class="profile-actions">
+                        <a href="/cadastroVeiculo/" class="action-button">
+                            <i class="ri-edit-line"></i>
+                            <span>Cadastrar Veículo</span>
+                        </a>
+                        <a href="/carrinho/" class="action-button">
+                            <i class="ri-calendar-line"></i>
+                            <span>Minhas Reservas</span>
+                        </a>
+                        <a href="#" class="action-button">
+                            <i class="ri-settings-3-line"></i>
+                            <span>Configurações</span>
+                        </a>
+                        <a href="/telaLogin/" class="action-button logout btn-logout" >
+                            <i class="ri-logout-box-line"></i>
+                            <span>Logout</span>
+                        </a>
+                    </div>
+
+                    <!-- Recent Reservations -->
+                    <div class="recent-bookings">
+                        <h3>Reservas Recentes</h3>
+                        <div class="booking-item">
+                            <span class="location-name">Shopping Central</span>
+                            <span class="booking-date">30 de setembro de 2024</span>
+                        </div>
+                        <div class="booking-item">
+                            <span class="location-name">Teatro Municipal</span>
+                            <span class="booking-date">25 de setembro de 2024</span>
+                        </div>
+                        <div class="booking-item">
+                            <span class="location-name">Parque Aquático</span>
+                            <span class="booking-date">15 de setembro de 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Framework7 Library Bundle JS -->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
+    <!-- Cordova -->
+    <script src="cordova.js"></script>
+        <script>
+            document.querySelector('.btn-logout').addEventListener('click', function() {
+    localStorage.removeItem('loggedIn');
+    mainView.router.navigate('/login/');
+    });
+
+    </script>
+</body>
+
+</html>

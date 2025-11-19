@@ -1,0 +1,251 @@
+:root {
+    --branco: #ffff;
+    --gelo: #f1f1f1;
+    --cinza-claro: #f6f6f6;
+    --cinza-medio: #bebdbd;
+    --verde: #19c463;
+    --preto: #2a2a2a;
+}
+
+.nav-top.cart {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--branco);
+    padding: 10px 0px;
+}
+
+.nav-top.cart a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px var(--branco);
+    border-radius: 50%;
+    color: var(--preto);
+}
+
+.nav-top.cart a:first-child {
+    margin-left: 20px;
+}
+
+.nav-top.cart a:last-child {
+    margin-right: 20px;
+}
+
+#listCar {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 20px;
+    padding-bottom: 280px;
+}
+
+.item-carrinho {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 10px auto;
+    width: 90%;
+    background: var(--branco);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+.area-img img {
+    max-width: 100px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.area-details {
+    flex: 1;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sup {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name-prod {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--preto);
+}
+
+.middle {
+    color: var(--cinza-texto);
+    font-size: 14px;
+}
+
+
+/* Seção de Preço e Quantidade */
+.preco-quantidade {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.preco-quantidade span {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--preto);
+}
+
+.count {
+    display: flex;
+    align-items: center;
+}
+
+/* Botões de Quantidade */
+.minus, .plus {
+    width: 40px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.minus {
+    background: var(--branco);
+    border: 1px solid var(--cinza-texto);
+    color: var(--cinza-texto);
+}
+
+.plus {
+    background: var(--verde);
+    color: var(--branco);
+    border: none;
+}
+
+/* Botão Principal */
+button.add-cart2 {
+    background-color: var(--verde);
+    color: var(--branco);
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+button.add-cart2:hover {
+    background-color: #17a554;
+}
+
+/* Barra de Totalização */
+.totals {
+    background-color: var(--branco);
+    border-top: 1px solid var(--gelo);
+    padding: 15px 20px;
+    position: fixed;
+    bottom: 60px;
+    width: 100%;
+    z-index: 10;
+}
+
+.payment-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: var(--branco);
+    padding: 10px 20px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.flex-100 {
+    flex: 1;
+    text-align: center;
+}
+
+.w-80 {
+    width: 80%;
+    padding: 8px 0px;
+}
+
+#totais {
+    flex-direction: column;
+}
+
+;bd-bottom {
+    border-bottom: 1px solid var(--gelo);
+}
+
+/* Botões principais */
+button.add-cart2 {
+    background-color: var(--azul-uber);
+    color: var(--branco);
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button.add-cart2:hover {
+    background-color: var(--verde);
+}
+
+/* Botões de avaliação */
+button.btn-rates {
+    background-color: var(--gelo);
+    color: var(--preto);
+    border: 1px solid var(--preto);
+    border-radius: 20px;
+    padding: 8px 12px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+button.promo-btn {
+    width: 50%;
+    background-color: var(--verde);
+    color: var(--branco);
+    padding: 6px 6px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.promo-btn:hover {
+    background-color: var(--azul-uber);
+}
+
+/* Barra de ferramentas */
+.toolbar {
+    background-color: var(--branco);
+    border-top: 1px solid var(--gelo);
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.toolbar-inner {
+    max-width: 1000px;
+    margin:  auto;
+    padding: 10px;
+}
+
+.zona {
+    display: flex;
+    font-size: 12px;
+}
+
+.qtd-item{
+    color: var(--branco);
+}

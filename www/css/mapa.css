@@ -1,0 +1,59 @@
+     /* Configuração do mapa para responsividade */
+     #map {
+        width: 100%;
+        height: 70vh; /* A altura inicial em dispositivos móveis */
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+    
+    .distance-info {
+        text-align: center;
+        font-size: 1rem;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    /* Ajustes para telas maiores */
+    @media (min-width: 768px) {
+        #map {
+            height: 80vh; /* Aumenta a altura em telas maiores */
+        }
+        .distance-info {
+            font-size: 1.2rem;
+        }
+    }
+.distance-info {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.nav-top2.cart2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--branco);
+    padding: 10px 0px;
+}
+
+.nav-top2.cart2 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px var(--branco);
+    border-radius: 50%;
+    color: var(--preto);
+}
+
+.nav-top2.cart2 a:first-child {
+    margin-left: 20px;
+}
+
+.nav-top2.cart2 a:last-child {
+    margin-right: 20px;
+}

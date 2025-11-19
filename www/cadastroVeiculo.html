@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#2196f3">
+    <title>Cadastro de Veículo</title>
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/remixicons/remixicon.css">
+    <script src="https://kit.fontawesome.com/920b610717.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="view view-main">
+            <div data-name="cadastroVeiculo" class="page theme-dark">
+                <div class="page-content ">
+                    <div id="menuPrincipal" class="toolbar toolbar-bottom">
+                        <div class="toolbar-inner display-flex">
+                            <a href="/index/" class="tab-link link active">
+                                <i class="ri-home-5-line"></i>
+                                <span>Home</span>
+                            </a>        
+                        </div>
+                    </div>
+                <div class="container">
+                    <div class="register-wrapper">
+                        <div class="register-box">
+                            <h2>Cadastrar Veículo</h2>
+                            <div class="input-group">
+                                <label for="vehicle-make">Marca</label>
+                                <input type="text" name="vehicle-make" placeholder="Marca do Veículo">
+                            </div>
+                            <div class="input-group">
+                                <label for="vehicle-model">Modelo</label>
+                                <input type="text" name="vehicle-model" placeholder="Modelo do Veículo">
+                            </div>
+                            <div class="input-group">
+                                <label for="vehicle-year">Ano</label>
+                                <input type="number" name="vehicle-year" placeholder="Ano">
+                            </div>
+                            <div class="input-group">
+                                <label for="vehicle-plate">Placa</label>
+                                <input type="text" name="vehicle-plate" placeholder="Placa do Veículo">
+                            </div>
+                            <div class="input-group">
+                                <label for="vehicle-color">Cor</label>
+                                <input type="text" name="vehicle-color" placeholder="Cor do Veículo">
+                            </div>
+                            <a href="#" class="btn-submit">Cadastrar Veículo</a>
+                            <p>Já tem um veículo cadastrado? <a href="/lista-veiculos/" class="login-link">Ver lista de veículos</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+    <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
+</html>

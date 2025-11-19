@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- App Title -->
+    <title>Login</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Ícones Material Design -->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <!-- RemixIcons -->
+    <link rel="stylesheet" href="css/remixicons/remixicon.css">
+    <script src="https://kit.fontawesome.com/920b610717.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+        <!-- Main View -->
+        <div class="view view-main">
+            <div data-name="login" class="page theme-dark">
+                <!-- Page Content -->
+                <div class="container">
+                    <div class="login-wrapper">
+                        <div class="login-box">
+                            <h2>Login</h2>
+                            <div class="input-group">
+                                <label for="username">Usuário</label>
+                                <input type="text" name="username" placeholder="Usuário">
+                            </div>
+                            <div class="input-group">
+                                <label for="password">Senha</label>
+                                <input type="password" name="password" placeholder="Senha">
+                            </div>
+                            <a href="#" class="forgot-password">Esqueceu sua senha?</a>
+                            <div class="social-login">
+                                <div class="social-icon">
+                                    <i class="ri-google-line"></i>
+                                </div>
+                                <div class="social-icon">
+                                    <i class="ri-facebook-fill"></i>
+                                </div>
+                            </div>
+                            <a href="/index/" class="btn-submit">Entrar</a>
+                            <p>Não tem uma conta? <a href="/cadastro/" class="create-account-link">Crie uma conta!</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Framework7 Library JS -->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
+    <!-- App Routing -->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
+</html>

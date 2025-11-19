@@ -1,0 +1,386 @@
+:root {
+    --branco: #ffffff;
+    --cinza-claro: #f6f6f6;
+    --cinza-medio: #bebdbd;
+    --preto: #000000;
+    --cinza-escuro: #333333;
+    --azul-uber: #276ef1; /* Cor principal */
+    --azul-hover: #1758d1; /* Azul mais escuro para hover */
+    --verde-disponivel: #28a745; /* Verde para vagas disponíveis */
+    --vermelho-ocupado: #ff6f61; /* Vermelho suave para vagas ocupadas */
+    --cinza-hover: #444444; /* Cinza para hover */
+}
+
+
+.num {
+    font-size: 20px;
+    margin-right: 27px;
+}
+.top-nav2 {
+    width: 100%;
+    height: 70px;
+    background: #383838;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.prod-detail {
+    background: var(--cinza-escuro);
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.prod-detail img {
+    margin-top: 10px;
+    max-width: 300px;
+}
+
+.buttons-top {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons-top a {
+    width: 40px;
+    height: 40px;
+    background: var(--branco);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--preto);
+    border: 1px solid var(--gelo);
+    font-size: 18px;
+}
+
+.buttons-top a:first-child {
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.buttons-top a:last-child {
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+.prod-content {
+    margin-top: 40px;
+    background: var(--branco);
+    position: relative;
+    z-index: 99;
+}
+
+
+.img-parking {
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.img-parking img{
+    flex: 0 0 100; 
+    border-radius: 15px;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px; /* Espaço consistente entre os elementos */
+}
+
+
+
+.line b{
+    font-size: 20px;
+}
+
+.promo-btn {
+    width: 30%;
+    background:var(--cinza-claro);
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    color: var(--branco);   
+}
+.btn-rates {
+    border: 1px solid #cbcbcb;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background: none;
+    margin-right: 5px;
+    width: 80px;
+    font-size: 16px;
+}
+
+
+.ri-thumb-up-fill {
+    color: var(--verde);
+}
+
+.color-gray {
+    color: gray;
+}
+
+
+.flex-40 {
+    flex: 40%;
+}
+
+.flex-60 {
+    flex: 60%;
+}
+
+.riscado {
+    text-decoration: line-through;
+}
+
+.peicing {
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.add-cart {
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    background: var(--azul-uber);
+    color: var(--branco);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.add-cart:hover {
+    background: var(--verde);
+}
+
+.parking-grid {
+    border-radius: 5px;
+    background: var(--cinza-escuro);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Define 5 colunas de tamanho igual */
+    gap: 15px;
+    padding: 10px;
+}
+
+
+
+.parking-lot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px; /* Diminui o padding interno para tornar as vagas menores */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem; /* Reduz o tamanho da fonte */
+}
+.parking-lot.available {
+    background-color: var(--verde-disponivel);
+}
+
+.parking-lot.occupied {
+    background-color: var(--vermelho-ocupado);
+}
+
+.parking-spot {
+    background-color: var(--branco);
+    border: 1px solid var(--cinza-medio);
+    transition: all 0.3s ease;
+}
+
+.parking-spot.available {
+    background-color: var(--verde-disponivel);
+}
+
+.parking-spot.occupied {
+    background-color: var(--vermelho-ocupado);
+}
+
+.parking-spot:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+
+/* Estilos para a legenda */
+.legend {
+    display: flex;
+    justify-content: space-around; /* Melhor espaçamento */
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.legend-color.available {
+    background-color: var(--verde-disponivel);
+}
+
+.legend-color.unavailable {
+    background-color: var(--vermelho-ocupado);
+}
+
+/* Container principal */
+.parking-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ajusta o número de colunas dinamicamente */
+    gap: 16px; /* Espaçamento entre as vagas */
+    max-width: 600px; /* Limita a largura máxima do grid */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para as vagas */
+.parking-spot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Cores para diferentes tipos de vagas */
+.available {
+    background-color: #28a745; /* Verde para disponível */
+}
+
+.occupied {
+    background-color: #ff6f61; /* Vermelho para ocupada */
+}
+
+.reserved {
+    background-color: #f39c12; /* Laranja para reservada */
+}
+
+.disabled {
+    background-color: #6c757d; /* Cinza para PCD */
+}
+
+.elderly {
+    background-color: #5bc0de; /* Azul para idoso */
+}
+
+/* Efeitos de hover */
+.parking-spot:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+/* Container da legenda */
+.parking-legend {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os itens da legenda */
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos itens individuais */
+.legend-item {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #333;
+}
+
+/* Estilo das caixas de cores */
+.box {
+    width: 10px;
+    height: 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 8px; /* Espaço entre a caixa e o texto */
+}
+
+/* Cores para as caixas */
+.occupied-box {
+    background-color: #ff6f61; /* Vermelho para ocupado */
+}
+
+.available-box {
+    background-color: #28a745; /* Verde para disponível */
+}
+
+.pcd-box {
+    background-color: transparent; /* Fundo transparente para exibir o ícone */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pcd-box img {
+    width: 100%; /* Ajusta o ícone para caber na caixa */
+    height: auto;
+    max-width: 16px;
+    max-height: 16px;
+}
+
+.elderly-box {
+    background-color: #5bc0de; /* Azul para idoso */
+}
+
+.popup .page {
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+}
+
+.block-title, .block-footer {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.block-footer {
+    font-size: 14px;
+    color: #333;
+}
+
+.button-fill.color-blue {
+    background-color: #276ef1;
+    color: white;
+}
+
+.sheet-modal-inner {
+    padding: 20px;
+  }
+  .sheet-modal {
+    height: auto;
+    max-height: 50%;
+    border-radius: 10px;
+  }
+  

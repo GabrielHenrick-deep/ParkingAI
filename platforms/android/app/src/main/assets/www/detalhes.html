@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#2196f3">
+    <title>Mapa de Estacionamento</title>
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/remixicons/remixicon.css">
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+        <div class="view view-main">
+            <div data-name="detalhes" class="page color-theme-blue">
+                <div class="top-nav2">
+                    <div class="buttons-top">
+                        <a href="/index/"><i class="ri-arrow-left-s-line"></i></a>
+                        <a href="/carrinho/" class="btn-cart" data-count="0">
+                            <i class="ri-car-fill"></i>
+                        </a>
+                        <a href="#"><i class="ri-heart-3-line"></i></a>
+                        <a href="#"><i class="ri-share-2-line"></i></a>
+                    </div>
+                </div>
+                <div class="toolbar toolbar-bottom">
+                    <div class="toolbar-inner display-flex align-items-center justify-content-center">
+                        
+                        <div class="parking-legend">
+                            <span class="legend-item"><span class="occupied-box"></span>Ocupado</span>
+                            <span class="legend-item"><span class="available-box"></span> Disponível</span>
+                            <span class="legend-item"><img src="img/wheelchair2.png"> PCD</span>
+                            <span class="legend-item"><span class="idoso-box"></span>Idoso</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Scrollable page content -->
+                <div class="page-content">
+                    <div class="prod-content">
+                        <div class="block-title "><Span>Garagens</Span></div>
+                        <div class="block h">
+                            <div class="swiper garagemSwiper">
+                                <div class="swiper-wrapper">
+                                <div class="swiper-slide t">
+                                    <div class="grid grid-cols-2 grid-gap">
+                                        <!-- Vagas de Estacionamento -->
+                                        <div class="parking-spot idoso occupied">
+                                            <a href="#"><img src="img/car.png"></a>
+                                        </div>
+                                        <div class="" >|</div>
+                                        <div class="parking-spot idoso " >
+                                            <img src="img/car.png">
+                                        </div>
+                                        <div class="" >|</div>
+                                        <div class="parking-spot available" onclick="openParkingSheet('3', 'Idoso', '4.90')">Idoso</div>
+                                        <div class="" >|</div>
+                                        <div class="parking-spot available" onclick="openParkingSheet('4', 'PCD', '5,70')"><img src="img/wheelchair.png"></div>
+                                        <div class="" >|</div>
+                                    </div>
+                                    <div class="grid grid-cols-2 grid-gap">
+                                        
+                                        <!-- Vagas de Estacionamento -->
+                                        <div class="" >|</div>
+                                        <div class="parking-spot  occupied" ><img src="img/wheelchair.png"></div>
+                                        <div class="" >|</div>
+                                        <div class="parking-spot  occupied" ><img src="img/wheelchair.png"></div>
+                                        <div class="" >|</div>
+                                        <div class="parking-spot available" >avaible</div>
+                                        <div class="" >|</div>
+                                        <div class="parking-spot occupied" ><img src="img/car.png"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide t">
+                                    <div class="grid grid-cols-2 grid-gap">
+                                        
+                                        <!-- Vagas de Estacionamento -->
+                                        <div class="parking-spot occupied" ><img src="img/car.png"></div>
+                                        <div class="" >|</div>
+                                        <div class="parking-spot occupied" ><img src="img/car.png"></div>
+                                        <div class="" >|</div>
+                                        <div class="parking-spot available" >avaible</div>
+                                        <div class="" >|</div>
+                                        <div class="parking-spot occupied" ><img src="img/car.png"></div>
+                                        <div class="" >|</div>
+                                    </div>
+                                    <div class="grid grid-cols-2 grid-gap">
+                                        
+                                        <!-- Vagas de Estacionamento -->
+                                        <div class="" >|</div>
+                                        <div class="parking-spot occupied" ><img src="img/car.png"></div>
+                                        <div class="" >|</div>
+                                        <div class="parking-spot occupied" ><img src="img/car.png"></div>
+                                        <div class="" >|</div>
+                                        <div class="parking-spot available" >avaible</div>
+                                        <div class="" >|</div>
+                                        <div class="parking-spot occupied" ><img src="img/car.png"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide t">
+                                    <div class="grid grid-cols-2 grid-gap">
+                                        
+                                        <!-- Vagas de Estacionamento -->
+                                        <div class="parking-spot occupied" ><img src="img/car.png"></div>
+                                        <div class="" >|</div>
+                                        <div class="parking-spot occupied" ><img src="img/car.png"></div>
+                                        <div class="" >|</div>
+                                        <div class="parking-spot available" >avaible</div>
+                                        <div class="" >|</div>
+                                        <div class="parking-spot occupied" ><img src="img/car.png"></div>
+                                        <div class="" >|</div>
+                                    </div>
+
+                                    <div class="grid grid-cols-2 grid-gap">
+                                        
+                                        <!-- Vagas de Estacionamento -->
+                                        <div class="" >|</div>
+                                        <div class="parking-spot available" ><img src="img/car.png"></div>
+                                        <div class="" >|</div>
+                                        <div class="parking-spot occupied" ><img src="img/car.png"></div>
+                                        <div class="" >|</div>
+                                        <div class="parking-spot available" >avaible</div>
+                                        <div class="" >|</div>
+                                        <div class="parking-spot occupied" ><img src="img/car.png"></div>
+                                    </div>
+                                </div>
+                                <!-- Popup -->
+                                <div class="sheet-modal" id="parking-sheet">
+                                    <div class="sheet-modal-inner">
+                                      <div class="block-title">Confirmar reserva</div>
+                                      <div class="block">
+                                        <p>Vaga: <span id="parking-number"></span></p>
+                                        <p>Garagem: <span id="parking-floor"></span></p>
+                                        <p>$: <span id="parking-price"></span> por hora</p>
+                                        <button class="button button-fill" id="book-parking">Reservar</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+    <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
+    <script src="cordova.js"></script>
+    <script>
+        function reservarVaga(element) {
+            if ($(element).hasClass('available')) {
+                $(element).removeClass('available').addClass('occupied');
+                $(element).text('Reservada');
+                // Aqui você pode adicionar lógica adicional para lidar com a reserva
+            } else {
+                alert('Esta vaga já está ocupada.');
+            }
+        }
+
+        function openParkingPopup(number, floor) {
+            // Preenche as informações do popup
+            document.getElementById('parking-number').textContent = number;
+            document.getElementById('parking-floor').textContent = floor;
+            
+            // Abre o popup
+            var popup = app.popup.open('#parking-popup');
+        }
+
+    </script>
+</body>
+
+</html>
+
